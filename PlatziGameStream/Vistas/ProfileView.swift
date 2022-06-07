@@ -9,9 +9,8 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    
-    @State var nombreUsuario:String = "Lorem"
-    @State var imagenPerfil:UIImage = UIImage(named: "perfilEjemplo")!
+    @State var nombreUsuario: String = "Lorem"
+    @State var imagenPerfil: UIImage = UIImage(named: "perfilEjemplo")!
     
     
     var body: some View {
@@ -39,7 +38,7 @@ struct ProfileView: View {
                 
                 Spacer()
             }
-        } .onAppear(
+        } .onAppear (
             
             perform: {
                 if returnUiImage(named: "fotoperfil") != nil {
